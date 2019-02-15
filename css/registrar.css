@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+.form{
+    margin:0 auto;
+    width:60%;
+    padding: 10px;
+}
+    .form legend{
+        font-size: 20pt;
+        font-weight: 700;
+        color: #acacac;
+    }
+    .form p{
+        font-size: 17pt;
+        margin: 10px;
+    }
+
+    .form input, textarea {
+        width: 250px;
+        height: 20px;
+        border-radius: 15px;
+        border: 1px solid #9f9f9f;
+        box-shadow: 0x 3px 5px rgba(0,0,0, .4);
+        margin-left: 10px;
+        padding-left: 5px;
+    }
+
+    .form textarea {
+        height: 100px;
+
+    }
+
+    .form input:hover, textarea:hover {
+        background-color:#dbdbdb;
+    }

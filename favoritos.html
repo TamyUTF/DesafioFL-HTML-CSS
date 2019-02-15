@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/home.css" media="screen and (min-width: 480px)"/>
+    <script>
+        function fechaSlideMenu(){
+            document.getElementById('sidemenu').style.width='0';
+            document.getElementById('container').style.marginLeft='0';
+        }
+        function abreSlideMenu(){
+            document.getElementById('sidemenu').style.width='270px';
+            document.getElementById('container').style.marginLeft='270px';
+        }
+    </script>
+</head>
+
+<body>
+<div id="container">
+<header id="cabecalho">
+    <span>
+        <a href="#" onclick="abreSlideMenu()">
+        <img src="images/icon-list.png" width="26px" heigth="26px">
+        </a>
+    </span>
+
+    <div id="pesquisa">
+        <input type="text" id="txtBusca" placeholder="Pesquisar contato"/>
+        <img src="images/icon-search.png" />
+    </div>
+</header>
+    
+<nav id="sidemenu" class="nav">
+    <span class="fecha" onclick="fechaSlideMenu()">
+        <img src="images/icon-error.png" >
+    </span>
+    <a href="home.html">Contatos</a>
+    <a href="favoritos.html">Favoritos</a>
+    <a href="registrar.html">Registrar</a>    
+</nav>
+</body>
+</html>
