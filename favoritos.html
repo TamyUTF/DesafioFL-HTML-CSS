@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="css/home.css" media="screen and (min-width: 480px)"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
     <script>
         function fechaSlideMenu(){
             document.getElementById('sidemenu').style.width='0';
@@ -14,8 +15,8 @@
         }
     </script>
 </head>
-<body>
 
+<body>
 <div id="container">
     <header id="cabecalho">
         <span>
@@ -45,7 +46,6 @@
         <div class="contato">
             <span class="card-header" onclick="abreModal()">
                 <img src="images/avatar-girl.png" class="avatar"/>
-    
                 <section class="main-info">
                     <h3>Nome do Contato</h3>
                     <h4>Tel: (43) 1234-5678</h4>
@@ -54,10 +54,11 @@
                 </section>
             </span>
             <section class="footer">
-                    <img src="images/icon-fav.png" class="fav" onclick="src='images/icon-fav-full.png'"/>
+                    <img src="images/icon-fav-full.png" class="fav" onclick="src='images/icon-fav.png'"/>
                     <img src="images/icon-edit.png" class="edit"/>
             </section>
         </div>
+    </div>
     
     <div id="modal" class="modal">
         <div class="modal-content">
@@ -78,7 +79,6 @@
             </section>
         </div>
     </div>
-</div>
 </div>
 </body>
 </html>

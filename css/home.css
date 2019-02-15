@@ -14,6 +14,7 @@ body{
 }
 
 #container{
+box-sizing: border-box;
  padding: 20px;
  padding-right: 0;
  transition: margin-left 0.7s;
@@ -169,12 +170,12 @@ body{
         }
 
         .footer {
-            border: 1px solid #000;
+
 
         }
-            .footer img {
-                
-            }
+        .footer img {
+            margin: 5px 10px;
+        }
 /*MODAL*/    
     #modal {
         display: none;
