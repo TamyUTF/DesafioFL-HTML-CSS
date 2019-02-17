@@ -2,26 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="css/home.css" media="screen and (min-width: 480px)"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
-    <script>
-        function fechaSlideMenu(){
-            document.getElementById('sidemenu').style.width='0';
-            document.getElementById('container').style.marginLeft='0';
-        }
-        function abreSlideMenu(){
-            document.getElementById('sidemenu').style.width='270px';
-            document.getElementById('container').style.marginLeft='270px';
-        }
-
-        function abreModal(){
-            document.getElementById('modal').style.display='block';
-        }
-
-        function fechaModal(){
-            document.getElementById('modal').style.display='none';
-        }
-    </script>
+    <script src="js/home.js"></script>
 </head>
 
 <body>
@@ -50,7 +34,7 @@
     <a href="registrar.html">Registrar</a>    
 </nav>
 
-<h1>Agenda</h1>
+<h1>Meus contatos</h1>
 
 <div id="listaContatos" >
     <div class="contato">
@@ -66,10 +50,28 @@
         </span>
         <section class="footer">
                 <img src="images/icon-fav.png" class="fav" onclick="src='images/icon-fav-full.png'"/>
-                <img src="images/icon-edit.png" class="edit"/>
+                <a href="editar.html"><img src="images/icon-edit.png" class="edit"/></a>
         </section>
     </div>
 
+    <div class="contato">
+        <span class="card-header" onclick="abreModal()">
+            <img src="images/avatar-girl.png" class="avatar"/>
+
+            <section class="main-info">
+                <h3>Nome do Contato</h3>
+                <h4>Tel: (43) 1234-5678</h4>
+                <p>E-mail: exemplo@abc.net<br/>
+                Empresa: ForLogic</p>
+            </section>
+        </span>
+        <section class="footer">
+                <img src="images/icon-fav.png" class="fav" onclick="src='images/icon-fav-full.png'"/>
+                <a href="editar.html"><img src="images/icon-edit.png" class="edit"/></a>
+        </section>
+    </div>
+</div>    
+<!--MODAL-->
 <div id="modal" class="modal">
     <div class="modal-content">
         <section class="modal-header">
@@ -89,7 +91,7 @@
         </section>
     </div>
 </div>
-</div>
+
 
 </div>       
 </body>

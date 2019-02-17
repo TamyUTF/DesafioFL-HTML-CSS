@@ -5,21 +5,11 @@
     margin: 0;
 }
 
-@media only screen and (min-width: 480px){
-    .contato {
-        display:block;
-        position: relative;
-        margin: 0 auto;
-        box-sizing: border-box;
-        width: 70%;
-        height: 240px;
-        background-color: #fff;
-        border: 1px solid #c0c0c0;
-        border-left: 10px solid #400080;
-        padding: 10px;
-        box-shadow: 3px 3px 3px rgba(5,5,5,.1);
-    }
-
+@media only screen and (max-width: 480px){
+#listaContatos{
+    padding: 5%;
+    margin: 0;
+}
 }
 
 body{
@@ -27,12 +17,12 @@ body{
 }
 
 #container{
- padding: 20px;
- padding-right: 0;
+
+ box-sizing: border-box;
  transition: margin-left 0.7s;
  overflow: hidden;
  width: 100%;
- margin:0x;
+ margin:0;
 }
 
 #cabecalho {
@@ -41,8 +31,9 @@ body{
     background-color: #555555;
     position:relative;
     margin:0;
-    top:-20px;
-    left:-20px;
+    margin-bottom: 10px;
+    top:0px;
+    left:0px;
     width: 100%;
     padding: 10px 5px 5px 10px; 
 }
@@ -85,8 +76,6 @@ body{
     }
 
     h1{
-        margin-left: auto;
-        margin-right: auto;
         text-align: center;
         color: #400080;
         font-size: 30pt;
@@ -125,13 +114,19 @@ body{
         #pesquisa img {
             padding: 3px;
         }
-
+#listaContatos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
 .contato {
-    display:flex;
+    display:block;
     position: relative;
-    margin: 0 auto;
+    margin: 20px 20px;
     box-sizing: border-box;
     width: 350px;
+    min-width: 320px;
+    height: 150px;
     background-color: #fff;
     border: 1px solid #c0c0c0;
     border-left: 10px solid #400080;
@@ -179,11 +174,11 @@ body{
         }
 
         .footer {
-            border: 1px solid #000;
+            display: block;
 
         }
             .footer img {
-                
+                margin: auto 10px;
             }
 /*MODAL*/    
     #modal {

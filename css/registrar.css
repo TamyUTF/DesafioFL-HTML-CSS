@@ -1,8 +1,22 @@
 @charset "UTF-8";
 
+@media only screen and (max-width: 480px){
+    div#formulario.form{
+        position: relative;
+        margin:0;
+    }
+
+#uDados {
+    position: relative;
+    box-sizing: border-box;
+    margin: 10%;
+}
+
+}
+
 
 .form{
-    margin:0 auto;
+    margin:auto;
     width:60%;
     padding: 10px;
 }
@@ -28,7 +42,6 @@
 
     .form textarea {
         height: 100px;
-
     }
 
     .form input:hover, textarea:hover {
