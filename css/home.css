@@ -192,9 +192,9 @@ body{
     }
         .modal-content {
             background-color: #fff;
-            margin: 20% auto;
+            margin: 10% auto;
             padding:0;
-            width: 50%;
+            width: 70%;
         }
 
         .modal-header{
