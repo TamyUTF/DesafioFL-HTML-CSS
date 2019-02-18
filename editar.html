@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/home.css""/>
+    <link rel="stylesheet" type="text/css" href="css/registrar.css""/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
+    <script src="js/home.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+
+    <header id="cabecalho">
+        <span>
+            <a href="#" onclick="abreSlideMenu()">
+            <img src="images/icon-list.png" width="26px" heigth="26px">
+            </a>
+        </span>
+
+        <div id="pesquisa">
+            <input type="text" id="txtBusca" placeholder="Pesquisar contato"/>
+            <img src="images/icon-search.png" />
+        </div>
+    </header>
+
+<nav id="sidemenu" class="nav">
+    <span class="fecha" onclick="fechaSlideMenu()">
+        <img src="images/icon-error.png" >
+    </span>
+    <a href="home.html">Contatos</a>
+    <a href="favoritos.html">Favoritos</a>
+    <a href="registrar.html">Registrar</a>    
+</nav>
+
+<h1>Editar contato</h1>
+
+<div id="formulario" class="form">
+    <form method="post">
+        <fieldset id="uDados">
+            <legend>Informações do usuário</legend>
+            <p><label>Nome:</label><input type="text" id="uNome" placeholder="Nome" value="Maria" required/></p>
+            <p><label>Sobrenome:</label><input type="text" id="uSobre" placeholder="Sobrenome" value="da Silva Sauro" required/></p>
+            <p><label>E-mail:</label><input type="email" id="uEmail" placeholder="E-mail" value="contato@abc.com"/></p>
+            <p><label>Informações</label></p>
+            <p><label>Foto:</label><input type="file" id="uAvatar" placeholder="Insira uma imagem de perfil"/></p>
+            <p><label>Empresa:</label><input type="text" id="uEmp" placeholder="Empresa" value="Forlogic"/></p>
+            <p><label>Endereço:</label><input type="text" id="uEnd" placeholder="Endereço(ex: Rua, nº, bairro, estado...)" value="Rua abc, 123, Centro - Cornélio Procópio"/></p>
+            <p><label>Telefone:</label><input type="tel" id="uTel" placeholder="(xx) xxxx-xxxx" value="(12) 3456-7891"/></p>
+            <p><label>Comentário:</label><textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Adicione um comentário para este contato" value="Contatar apenas em casos de emergência."></textarea></p>
+        </fieldset>
+
+    </form>
+</div>
+</div>
+</body>
+</html>

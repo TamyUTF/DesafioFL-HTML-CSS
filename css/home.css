@@ -5,8 +5,12 @@
     margin: 0;
 }
 
-@media only screen and (min-width: 480px){
 
+@media only screen and (max-width: 480px){
+#listaContatos{
+    padding: 5%;
+    margin: 0;
+}
 }
 
 body{
@@ -15,8 +19,6 @@ body{
 
 #container{
 box-sizing: border-box;
- padding: 20px;
- padding-right: 0;
  transition: margin-left 0.7s;
  overflow: hidden;
  width: 100%;
@@ -29,8 +31,9 @@ box-sizing: border-box;
     background-color: #555555;
     position:relative;
     margin:0;
-    top:-20px;
-    left:-20px;
+    margin-bottom: 10px;
+    top:0px;
+    left:0px;
     width: 100%;
     padding: 10px 5px 5px 10px; 
 }
@@ -113,16 +116,21 @@ box-sizing: border-box;
         #pesquisa img {
             padding: 3px;
         }
-.listacontatos {
-    display:flex;
+
+#listaContatos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
 }
 
 .contato {
     display:block;
     position: relative;
-    margin: 0 auto;
+    margin: 20px 20px;
     box-sizing: border-box;
     width: 350px;
+    min-width: 320px;
+    height: 150px;
     background-color: #fff;
     border: 1px solid #c0c0c0;
     border-left: 10px solid #400080;
@@ -170,12 +178,13 @@ box-sizing: border-box;
         }
 
         .footer {
-
+            display: block;
 
         }
         .footer img {
             margin: 5px 10px;
         }
+
 /*MODAL*/    
     #modal {
         display: none;
@@ -190,7 +199,7 @@ box-sizing: border-box;
             background-color: #fff;
             margin: 10% auto;
             padding:0;
-            width: 70%;
+            width: 50%;
         }
 
         .modal-header{
@@ -199,6 +208,15 @@ box-sizing: border-box;
             color:#fff;
             font-weight: 600;
             padding:10px;
+        }
+
+        .modal-header span {
+            float: right;
+            box-sizing: border-box;
+            position: relative;
+            top: -20px;
+            font-weight: 900;
+            color:#fff;
         }
 
         .modal-header h3 {
@@ -210,6 +228,8 @@ box-sizing: border-box;
             line-height: 1.6;
             padding: 10px;
         }
+
+
 
         .btFecha {
             font-size: 50px;
