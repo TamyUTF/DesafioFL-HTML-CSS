@@ -6,21 +6,11 @@
 <link rel="stylesheet" type="text/css" href="css/home.css"/>
 <link rel="stylesheet" type="text/css" href="css/registrar.css"/>
 <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-
-<script>
-    function fechaSlideMenu(){
-        document.getElementById('sidemenu').style.width='0';
-        document.getElementById('container').style.marginLeft='0';
-    }
-    function abreSlideMenu(){
-        document.getElementById('sidemenu').style.width='270px';
-        document.getElementById('container').style.marginLeft='270px';
-    }
-</script>
+<script src="js/home.js"></script>
 </head>
 
 <body>
-
+</body>
 <div id="container">
 <header id="cabecalho">
     <span>
@@ -48,7 +38,7 @@
 <div id="formulario" class="form">
     <form method="post">
         <fieldset id="uDados">
-            <legend>Informações do contato</legend>
+            <legend>Informações do usuário</legend>
             <p><label>Nome:</label><input type="text" id="uNome" placeholder="Nome"/></p>
             <p><label>Sobrenome:</label><input type="text" id="uSobre" placeholder="Sobrenome"/></p>
             <p><label>E-mail:</label><input type="email" id="uEmail" placeholder="E-mail"/></p>
@@ -63,5 +53,5 @@
     </form>
 </div>
 </div>
-</body>
+
 </html>
