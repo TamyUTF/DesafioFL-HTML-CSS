@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <script>
         function fechaSlideMenu(){
             document.getElementById('sidemenu').style.width='0';
@@ -18,18 +19,20 @@
 
 <body>
 <div id="container">
-<header id="cabecalho">
-    <span>
-        <a href="#" onclick="abreSlideMenu()">
-        <img src="images/icon-list.png" width="26px" heigth="26px">
-        </a>
-    </span>
+    <header id="cabecalho">
+        <span>
+            <a href="#" onclick="abreSlideMenu()">
+            <img src="images/icon-list.png" width="26px" heigth="26px">
+            </a>
+        </span>
 
-    <div id="pesquisa">
-        <input type="text" id="txtBusca" placeholder="Pesquisar contato"/>
-        <img src="images/icon-search.png" />
-    </div>
-</header>
+        <div id="pesquisa">
+            <input type="text" id="txtBusca" placeholder="Pesquisar contato"/>
+            <img src="images/icon-search.png" />
+        </div>
+    </header>
+
+<h1>Contatos Favoritos</h1>
     
 <nav id="sidemenu" class="nav">
     <span class="fecha" onclick="fechaSlideMenu()">
@@ -39,5 +42,44 @@
     <a href="favoritos.html">Favoritos</a>
     <a href="registrar.html">Registrar</a>    
 </nav>
+
+<div id="listaContatos" >
+        <div class="contato">
+            <span class="card-header" onclick="abreModal()">
+                <img src="images/avatar-girl.png" class="avatar"/>
+                <section class="main-info">
+                    <h3>Nome do Contato</h3>
+                    <h4>Tel: (43) 1234-5678</h4>
+                    <p>E-mail: exemplo@abc.net<br/>
+                    Empresa: ForLogic</p>
+                </section>
+            </span>
+            <section class="footer">
+                    <img src="images/icon-fav-full.png" class="fav" onclick="src='images/icon-fav.png'"/>
+                    <img src="images/icon-edit.png" class="edit"/>
+            </section>
+        </div>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <section class="modal-header">
+                <span class="btFecha" onclick="fechaModal()">&times;</span>
+                <h3>Nome do Contato</h3>
+               
+            </section>
+            <section class="modal-info">
+                <img src="images/avatar-girl.png" class="avatar" width="100" height="100" />
+                <p>
+                 E-mail: contato@abc.com <br>
+                 Empresa: ForLogic <br/>
+                 Endereço: Rua abc, 123, Centro - Cornélio Procópio<br/>
+                 Telefone: (12) 3456-7891<br/>
+                 Comentario: Contatar apenas em casos de emergência. <br/>  
+                </p>
+            </section>
+        </div>
+    </div>
+</div>
 </body>
 </html>

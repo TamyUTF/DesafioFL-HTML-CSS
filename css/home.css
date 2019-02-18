@@ -5,6 +5,7 @@
     margin: 0;
 }
 
+
 @media only screen and (max-width: 480px){
 #listaContatos{
     padding: 5%;
@@ -17,8 +18,7 @@ body{
 }
 
 #container{
-
- box-sizing: border-box;
+box-sizing: border-box;
  transition: margin-left 0.7s;
  overflow: hidden;
  width: 100%;
@@ -79,6 +79,8 @@ body{
         text-align: center;
         color: #400080;
         font-size: 30pt;
+        margin: 0 auto 10px auto;
+        
     }
         h1::after, h1::before{
             content:'';
@@ -114,11 +116,13 @@ body{
         #pesquisa img {
             padding: 3px;
         }
+
 #listaContatos {
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto;
 }
+
 .contato {
     display:block;
     position: relative;
@@ -177,9 +181,10 @@ body{
             display: block;
 
         }
-            .footer img {
-                margin: auto 10px;
-            }
+        .footer img {
+            margin: 5px 10px;
+        }
+
 /*MODAL*/    
     #modal {
         display: none;
@@ -192,7 +197,7 @@ body{
     }
         .modal-content {
             background-color: #fff;
-            margin: 20% auto;
+            margin: 10% auto;
             padding:0;
             width: 50%;
         }
